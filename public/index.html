@@ -1,412 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
+<title>Mango</title>
+<link rel="icon" href="./Assets/mango-logo.png" sizes="75x75">
 </head>
 <body>
 
     <style>
 
+@font-face {
+  font-family: 'sf_ui_displayregular';
+    src: url('./css/fonts/sfuidisplay-regular-webfont.woff2') format('woff2'),
+         url('/css/fonts/sfuidisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 
         body{
-            position: absolute;
-            width: 1000px;
-            height: 1px;
-
-            background: #DDDDDD;
-        }
-
-        #header{
-            position: absolute;
-                width: 1520px;
-                height: 40px;
-                left: -9px;
-                top: -9px;
-
-                background: #333333;
-
-        }
-
-        #product{
-            position: absolute;
-            width: 950px;
-            height: 1025px;
-            left: 134px;
-            top: 226px;
-       }
-        
-       
-       
-        #tombol-share{
-            position: absolute;
-            width: 169px;
-            height: 32px;
-            left: 1190px;
-            top: 46px;
-
-        }
-        #profil{
-            position: absolute;
-            width: 349px;
-            height: 349px;
-            left: 1300px;
-            top: 68px;
-        }
-      
-        #mango{
-            position: absolute;
-            width: 226px;
-            height: 29px;
-            left: 1410px;
-            top: 280px;
-
-            font-family: 'SF UI Display';
-            font-style: normal;
-            font-weight: 100;
-            font-size: 24px;
-            line-height: 29px;
-     
-            
-            /* identical to box height */
-
-
-            color: #5F5B5B;
-        }
-        #thinking{
-            position: absolute;
-            width: 226px;
-            height: 29px;
-            left: 1370px;
-            top: 347px;
-
-            font-family: 'SF UI Display';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 29px;
-            /* identical to box height */
-
-
-            color: #A7A6A6;
-        }
-        #foto-profil{
-            position: relative;
-            width: 100px;
-            height: 100px;
-            left: 1300px;
-            top: 68px;
-        }
-        .tombol-atas{
-            position: absolute;
-                width: 179px;
-                height: 30px;
-                left: 1224px;
-                top: 48px;
-
-                background: #FFFDFD;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 5px;
-        }
-        
-        .tombol-atas img{
-            position: absolute;
-            width: 14.11px;
-            height: 18px;
-            left: 23.81px;
-            right: 141.08px;
-            top: 8px;
-            bottom: 2px;
-        }
-        
-        #tombol-subs b {
-
-            position: absolute;
-            width: 80px;
-            height: 50px;
-            left: 57px;
-            right: 17px;
-            top: 17px;
-
-            font-family: 'SF UI Display';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 0px;
+            margin: 0 auto;
             text-align: center;
-            
-
-            color: #6F6C6C;
+            font-family: 'sf_ui_displayregular';
+            background-color: rgb(243, 242, 242);
         }
-       
-        #tombol-subs  b:hover {
-            color:#509ce8;
+
+        .logo{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            float: left;
+            left: 380px;
+            top: -5px;
         }
-       
-    .logo1 img{
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        left: 400px;
-        top: 2px;
+  
 
-   
-    }
- 
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; 
+  width: 100%;  
+  height:30px;
+  left: 0px;
+  
 
+}
 
+.navbar a {
+  position: relative;
+  float: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  top: 20%;
+  font-size: smaller;
+  
     
-    #mphone{
-        position: absolute;
-        width: 78px;
-        height: 24px;
-        left: 550px;
-        top: 10px;
+}
 
-        font-family: 'SF UI Display';
-        font-style: normal;
-        font-weight: 350;
-        font-size: 12px;
-        line-height: 24px;
-        
-        
-        /* identical to box height */
-
-
-        color: #FFFFFF;
-    
-    }
-    #mwatch{
-        position: absolute;
-        width: 78px;
-        height: 24px;
-        left: 650px;
-        top: 10px;
-
-        font-family: 'SF UI Display';
-        font-style: normal;
-        font-weight: 200;
-        font-size: 12px;
-        line-height: 24px;
-        /* identical to box height */
-
-
-        color: #FFFFFF;
-
-        
-    
-    }
-    #wpods{
-        position: absolute;
-        width: 78px;
-        height: 24px;
-        left: 750px;
-        top: 10px;
-
-        font-family: 'SF UI Display';
-        font-style: normal;
-        font-weight: 200;
-        font-size: 12px;
-        line-height: 24px;
-        /* identical to box height */
-
-
-        color: #FFFFFF;
-
-        
-    
-    }
-    .menu1{
-        position: absolute;
-        width: 78px;
-        height: 24px;
-        left: 850px;
-        top: 10px;
-
-        font-family: 'SF UI Display';
-        font-style: normal;
-        font-weight: 200;
-        font-size: 12px;
-        line-height: 24px;
-        /* identical to box height */
-
-
-        color: #FFFFFF;
-
-    }
-    .menu{
-
-        color: #FFFDFD;
-        background-color: transparent;
-        text-decoration: none;
-        display: block;
-    }
-    .menu1{
-        color: #FFFDFD;
-        background-color: transparent;
-        text-decoration: none;
-        }
-     
-    
-    
-    .logo1 > img:last-of-type{
-        opacity: 1;
-        transition: opacity 10s ease-in-out;
-        -moz-transition: opacity 0.5s ease-in-out;
-        -webkit-transition: opacity 0.5s ease-in-out;
-    }
-    .logo1:hover > a img:last-of-type{
-        opacity: 0;
-    }
-
-    #product img{
-        position: absolute;
-        width: 400px;
-        height: 500px;
-        left: 430px;
-        top: 55px;
-        
-    }
-    .text{
-        position: absolute;
-        width: 489px;
-        height: 115px;
-        left: 450px;
-        top: -150px;
-
-        font-family: 'SF UI Display';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 76px;
-        line-height: 115px;
-        /* identical to box height */
-        display: none;
-
-
-        color: #000000;
-        
-    }
-    #text2{
-        position: absolute;
-        width: 489px;
-        height: 115px;
-        left: 550px;
-        top: -100px;
-   
-        font-size: 25px;
-        line-height: 115px;
-        /* identical to box height */
-
-
-        color: #000000;
-    }
-    #selengkapnya{
-        position: absolute;
-        width: 489px;
-        height: 115px;
-        left: 500px;
-        top: -50px;
-        background-color: transparent;
-
-        font-family: 'SF UI Display';
-        font-style: normal;
-        font-size: 20px;
-        line-height: 115px;
-        /* identical to box height */
-
-
-       color: #3b81f0;
-        
-    }
-    #buy{
-        position: absolute;
-        width: 489px;
-        height: 115px;
-        left: 710px;
-        top: -50px;
-        background-color: transparent;
-
-        font-family: 'SF UI Display';
-        font-style: normal;
-        font-size: 20px;
-        line-height: 115px;
-        /* identical to box height */
-
-
-       color: #3b81f0;
-    }
-    .text-product:hover{
-        text-decoration: underline;
-    }
-    .tombol{
-        position: absolute;
-        width: 78px;
-        height: 24px;
-        left: 750px;
-        top: 10px;
-
-        font-family: 'SF UI Display';
-        font-style: normal;
-        font-weight: 200;
-        font-size: 12px;
-        line-height: 24px;
-
-        color: #FFFDFD;
-        background-color: transparent;
-        text-decoration: none;
-        
-        opacity: 1;
-        transition: opacity 10s ease-in-out;
-        -moz-transition: opacity 0.5s ease-in-out;
-        -webkit-transition: opacity 0.5s ease-in-out;
-    }
-    .tombol-search:hover .tombol{
-        opacity: 0;
-    }
-    
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
 
 
 
 
-    
+
+.content{
+  position: absolute;
+  z-index: -1;
+  margin-left: 5%;
+  
+
+}
+
+.wpods{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border-radius: 25px;
+ }
+ #title1{
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  left: 28%;
+  font-size: 100px;
+  font-weight: 600;
+ }
+ #title2{
+  position: absolute;
+  top: 60%;
+  text-align: center;
+  left: 39%;
+  font-size: 27px;
+  font-weight: 600;
+ }
+  #more{
+  position: absolute;
+  top: 80%;
+  padding-top: 3px;
+  text-align: center;
+  left: 47%;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: royalblue;
+ }
+ #more:hover{
+  text-decoration: underline;
+ }
+ .buy{
+  position: absolute;
+  background-color: #4169e1;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  top: 80%;
+  left: 40%;
+ }
+ .buy:hover{
+  background-color: #6687ea;
+ }
     </style>
 
+     
+   <div class="navbar">
+        <img src="./Assets/mango-logo.png" width="100px" height="100px" class="logo">   
+        <a href="#">mPhone</a>
+        <a href="#news">mPad</a>
+        <a href="#contact">mWatch</a>
+        <a href="#contact">WaterPods</a>
+  </div>
 
+  <!-- Content -->
+
+  <div class="content">
+    <img src="./Assets/wpods2.jpg" class="wpods">
+    <p id="title1">WaterPods</p><br>
+    <p id="title2">Live Your Music</p>
+    <button class="buy">Beli</button><br>
+    <a href="#" id="more">Selengkapnya</a>
     
-        <div class="logo1">
-        <a href="https://google.com">
-        <img src="./Assets/mango-logo-white.png" width="40px" height="40px">
-        <img src="./Assets/mango-logo.png" width="40px" height="40px"></div></a>
-
-        <div id="mphone" class="tombol-menu"><a href="https://google.com" class="menu">mPhone</a></div>
-        <div id="mwatch" class="tombol-menu"><a href="https://google.com" class="menu">mWatch</a></div>
-        <div><a href="https://google.com" class="tombol">WaterPods</a></div>
-        <div class="tombol-search"><a href="" class="menu1">Search</a></div>
-        
-       
-
-    <div id="product">
-       
-        <img src="./Assets/wPods.png" width="400" height="500">
-        <div id="text1" class="text"><b>WaterPods</b></div>
-        <div id="text2" class="text">Live Your Music</div>
-        <a href="https://google.com"><div id="selengkapnya" class="text-product">
-            Learn More ></div></a>
-        <a href="https://google.com"><div id="buy" class="text-product">
-                Buy ></div></a>
-            
-
-    </div>
-
-        
-
-
- 
-        
-
     
- 
+  </div>
 
-
- 
 </body>
 </html>
